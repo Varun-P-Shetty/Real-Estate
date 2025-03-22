@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@tailwind utilities;
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
+/* 1B1A55  1E3E62  09122C   000957   */
+@utility gray-bg{
+    background-color: #2D336B;
+    @apply text-white min-h-screen;
+}
+
+@utility flex-center{
+    @apply flex items-center justify-center;
+}
+
+@utility flex-col-center{
+    @apply flex flex-col items-center justify-center;
+}
+
+@utility nav-bg{
+    background-color: #0B192C;
+}
+
+/* 0B192C */
