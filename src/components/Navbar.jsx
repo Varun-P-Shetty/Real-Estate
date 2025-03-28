@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState} from 'react'
 import {assets} from '../assets/assets'
 import { Link, useLocation} from 'react-router-dom';
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   
-  const [showMobileMenu, setShowMobileMenu] = React.useState(false)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   useEffect(() => {
     // Only disable scroll if mobile menu is open and on small screens

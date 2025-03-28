@@ -5,7 +5,6 @@ import { projectsData } from "../assets/assets";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
   // ✅ Make visibleImages dynamic based on screen size
   const [visibleImages, setVisibleImages] = useState(3);
 
@@ -50,9 +49,8 @@ const Projects = () => {
         <h1 className="text-3xl font-bold">Projects</h1>
         <span className="text-3xl underline">Completed</span>
       </div>
-      <div className="relative w-full mt-10">
-        <h1 className="text-3xl font-bold text-center mb-6">Projects</h1>
-
+      <p className="text-[15px] sm:text-[18px] text-center text-gray-600 mb-6 mt-2">Crafting Spaces, Building Legacies-Explore Our Portfolio</p>
+      <div className="relative w-full mt-5">
         {/* Image Slider */}
         <div className="overflow-hidden w-full flex justify-center">
           <div className="flex gap-3 transition-transform duration-300">
@@ -84,23 +82,3 @@ const Projects = () => {
   );
 };
 export default Projects;
-
-// <div className="absolute top-1/2 left-30 transform -translate-y-1/2">
-// <button
-//   className="p-2 bg-gray-800 text-white rounded-full shadow-md"
-//   onClick={prevSlide}
-//   disabled={currentIndex === 0}
-// >
-//   <FaChevronLeft size={20} />
-// </button>
-// </div>
-
-// <div className="absolute top-1/2 right-20 transform -translate-y-1/2">
-// <button
-//   className="p-2 bg-gray-800 text-white rounded-full shadow-md"
-//   onClick={nextSlide}
-//   disabled={currentIndex >= projectsData.length - visibleImages}
-// >
-//   <FaChevronRight size={20} />
-// </button>
-// </div>

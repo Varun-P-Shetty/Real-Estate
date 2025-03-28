@@ -9,7 +9,7 @@ const About = () => {
     { number: "10+", text: "Ongoing Projects" },
   ];
   return (
-    <div className="gray-bg">
+    <div className="">
       <div
         className="flex-col-center container mx-auto px-4 md:px-20 lg:px-32 w-full pt-20"
         id="About"
@@ -20,7 +20,7 @@ const About = () => {
             Our Brand
           </span>
         </h1>
-        <p className="text-gray-100 max-w-80 text-center mt-4 mb-10">
+        <p className="text-gray-700 max-w-80 text-center mt-4 mb-10">
           Passionate About Properties, Dedicated to Your Vision
         </p>
         <div className="flex flex-col md:flex-row items-center md:items-start md:gap-10 w-full min-h-screen">
@@ -40,13 +40,13 @@ const About = () => {
               {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <h2 className="text-4xl font-bold">{stat.number}</h2>
-                  <p className="text-gray-300 text-sm">{stat.text}</p>
+                  <p className="text-gray-700 text-sm">{stat.text}</p>
                 </div>
               ))}
             </div>
 
             {/* Paragraph Below the Grid */}
-            <p className="text-gray-300 text-md mt-6 md:mt-10 sm:ml-5 md:ml-7 w-full mb-10">
+            <p className="text-gray-700 text-md mt-6 md:mt-10 sm:ml-5 md:ml-7 w-full mb-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium fuga odit expedita harum nihil error eos, ab cumque
               sint aliquam fugit, molestiae neque quidem doloribus, vel vitae
