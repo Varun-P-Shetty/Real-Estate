@@ -89,6 +89,13 @@ export const testimonialsData = [
     }
 ];
 
+export const stats = [
+  { number: "100+", text: "Projects Completed" },
+  { number: "50+", text: "Years of Experience" },
+  { number: "20+", text: "Mn. Sq. Ft. Delivered" },
+  { number: "10+", text: "Ongoing Projects" },
+];
+
 
 // import logo from './logo.svg'
 // import logo_dark from './logo_dark.svg'

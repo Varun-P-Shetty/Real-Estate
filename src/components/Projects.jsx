@@ -2,6 +2,7 @@ import React from "react";
 import { useState,useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { projectsData } from "../assets/assets";
+import SectionHeader from "./ui/SectionHeader";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,11 +46,11 @@ const Projects = () => {
 
   return (
     <div className="mt-20">
-      <div className="flex-center gap-2">
-        <h1 className="text-3xl font-bold">Projects</h1>
-        <span className="text-3xl underline">Completed</span>
-      </div>
-      <p className="text-[15px] sm:text-[18px] text-center text-gray-600 mb-6 mt-2">Crafting Spaces, Building Legacies-Explore Our Portfolio</p>
+     <SectionHeader 
+  title="Projects" 
+  subtitle="Completed" 
+  description="Crafting Spaces, Building Legacies - Explore Our Portfolio" 
+/>
       <div className="relative w-full mt-5">
         {/* Image Slider */}
         <div className="overflow-hidden w-full flex justify-center">
