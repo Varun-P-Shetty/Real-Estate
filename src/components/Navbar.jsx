@@ -4,7 +4,7 @@ import { Link, useLocation} from 'react-router-dom';
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  
+  const isContact = location.pathname === '/Contact';
   const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div  className={`fixed top-0 w-full left-0 z-10 transition-all ${
-      isHomePage ? 'bg-transparent' : 'nav-bg bg-opacity-90'
+      isHomePage || isContact ? 'bg-transparent' : 'nav-bg bg-opacity-90'
     }`}>
       <div className='container mx-auto flex justify-between items-center px-3 py-2 md:px-3 md:py-2 lg:px-5 '>
         <img src={assets.logo} alt='logo'  className='w-20' />
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li><Link to='/Projects' className='cursor-pointer hover:text-gray-400'>Projects</Link></li>
           <li><Link to='/Testimonials' className='cursor-pointer hover:text-gray-400'>Testimonials</Link></li>
         </ul>
-        <button className='hidden md:block bg-white text-black rounded-full px-4 py-2'>Sign up</button>
+        <button className='hidden md:block btn-gradient-cb rounded-full px-4 py-2'>Sign up</button>
         <img src={assets.menu_icon} alt='menu' className='md:hidden w-8 cursor-pointer' onClick={() => { console.log("Mobile menu link clicked"); setShowMobileMenu(true)}} />
       </div>
       {/* -----------------Mobile Menu -------------------- */}

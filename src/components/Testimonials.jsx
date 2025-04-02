@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Card from './ui/Card'
-import { assets } from '../assets/assets'
 import { testimonialsData } from '../assets/assets'
 import SectionHeader from './ui/SectionHeader'
 

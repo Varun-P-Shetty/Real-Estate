@@ -15,6 +15,8 @@ import project_img_3 from './images/project_img_3.jpg';
 import project_img_4 from './images/project_img_4.jpg';
 import project_img_5 from './images/project_img_5.jpg';
 import project_img_6 from './images/project_img_6.jpg';
+import contact_img from './images/contactbg.jpg';
+import contactus_img from './images/contact.jpg';
 
 // ✅ Import profile images from src/assets/profiles
 import profile_img_1 from './profiles/profile_img_1.png';
@@ -35,6 +37,8 @@ const assets = {
   images: {
     header_img, // from public
     brand_img,  // imported from src/assets/images
+    contact_img,
+    contactus_img,
     project_img_1,
     project_img_2,
     project_img_3,

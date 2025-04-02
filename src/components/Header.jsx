@@ -10,8 +10,7 @@ const Header = () => {
       <div className='container text-center mx-auto py-10 px-6 md:px-20 lg:px-32 text-white'>
         <h2 className='  text-5xl sm:text-6xl md:text-7xl lg:text-[82px] inline-block max-w-3xl'> Explore homes that fit your dreams</h2>
         <div className='mt-10 space-x-6'>
-            <Link to='/Projects' className=' border border-white px-6 py-2 rounded'>Projects</Link>
-            <Link to='/' className=' bg-blue-700  hover:bg-blue-800 px-6 py-2 rounded'>Contact Us</Link>
+            <Link to='/Contact' className='btn-gradient-cb'>Contact Us</Link>
         </div>
       </div>
     </div>
