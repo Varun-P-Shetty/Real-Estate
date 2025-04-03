@@ -44,13 +44,17 @@
   }
 @layer utilities {
     .btn-gradient-cb {
-        @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
+        @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-4 py-2.5 text-center 
     }
 }
 /* removed the margin in the above one to adjust sign in properly in navbar */
 
 body{
     background-color: #FDFAF6;
+}
+
+.input{
+    @apply w-full p-2 border border-gray-300 rounded-lg; 
 }
 
 /* 0B192C */

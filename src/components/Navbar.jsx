@@ -32,7 +32,7 @@ const Navbar = () => {
           <li><Link to='/Projects' className='cursor-pointer hover:text-gray-400'>Projects</Link></li>
           <li><Link to='/Testimonials' className='cursor-pointer hover:text-gray-400'>Testimonials</Link></li>
         </ul>
-        <button className='hidden md:block btn-gradient-cb rounded-full px-4 py-2'>Sign up</button>
+        <button className='hidden md:block btn-gradient-cb rounded-full'>Sign up</button>
         <img src={assets.menu_icon} alt='menu' className='md:hidden w-8 cursor-pointer' onClick={() => { console.log("Mobile menu link clicked"); setShowMobileMenu(true)}} />
       </div>
       {/* -----------------Mobile Menu -------------------- */}
